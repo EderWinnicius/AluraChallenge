@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-blue: #F3F5FC;
+    --mid-blue: #E9ECF8;
+    --low-blue: #D8DFE8;
+    --text-out: #AAB2D5;
+    --dark-blue: #0A3871;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+    font-family: inter, 'sans-serif';
+    font-weight: 500;
+    background-color: var(--mid-blue);
+
+}
+
+
+.aluraLogo {
+    width: 120px;
+    height: 48px;
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+
+}
+
+/*MAIN DO PROJETO LEFT*/
+
+.leftConteinerPage {
+    width: 60%;
+    height: 100vh;
+    margin-left: 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+}
+
+.leftConteinerPage>main {
+    position: relative;
+    top: 168px;
+}
+
+.textForCript {
+    width: 100%;
+    height: 100%;
+    resize: none;
+
+    color: var(--dark-blue);
+    font-size: 32px;
+
+    border: none;
+    outline: none;
+    background-color: var(--mid-blue);
+}
+
+.textForCript::placeholder {
+    color: var(--dark-blue);
+    text-decoration: 2px underline;
+    font-family: inter, 'sans-serif';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.leftConteinerPage>footer {
+    width: 100%;
+    position: relative;
+    bottom: 78px;
+}
+
+
+.atentionWarning {
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+
+
+}
+
+.atentionWarning>img {
+    width: 25px;
+}
+
+.warningText {
+    font-size: 1.5rem;
+}
+
+.buttonsConteiner {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.button {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--low-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 26px;
+
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--dark-blue);
+
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    color: var(--mid-blue);
+}
+
+/*MENSAGEM JÁ INCRIPTADA*/
+
+.textCript {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 25px;
+
+    color: var(--text-out);
+    font-size: 32px;
+
+    border: none;
+    outline: none;
+    background-color: var(--light-blue);
+}
+
+.afterCript {
+    justify-content: space-around;
+}
+
+.copyButton {
+    width: 60%;
+}
+
+.copy {
+    height: 75px;
+}
+
+
+/*INICIANDO CARD RIGHT*/
+
+.rightConteinerPage {
+    width: 100%;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardConteiner {
+    width: 60%;
+    height: 90vh;
+
+    background-color: var(--light-blue);
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    box-shadow: .5px .5px 20px 0px var(--low-blue);
+}
+
+.image>img {
+    width: 100%;
+}
+
+.notificationConteiner {
+    width: 100%;
+    text-align: center;
+}
