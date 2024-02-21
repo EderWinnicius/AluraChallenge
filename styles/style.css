@@ -146,12 +146,14 @@ body {
     resize: none;
     padding: 25px;
 
+
+
     color: var(--text-out);
     font-size: 32px;
 
     border: none;
     outline: none;
-    background-color: var(--light-blue);
+    background-color: #ffffff00;
 }
 
 .afterCript {
@@ -160,6 +162,7 @@ body {
 
 .copyButton {
     width: 60%;
+    margin-bottom: 60px;
 }
 
 .copy {
@@ -201,4 +204,28 @@ body {
 .notificationConteiner {
     width: 100%;
     text-align: center;
+}
+
+.disable {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .leftConteinerPage {
+        margin-left: 0;
+    }
+
+    .cardConteiner {
+        height: auto;
+    }
+
+    .afterCript {
+        padding: 15px;
+    }
 }

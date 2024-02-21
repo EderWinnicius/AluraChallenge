@@ -20,7 +20,7 @@
 
         <main>
             <textarea placeholder="Digite aqui seu texto" class="textForCript" cols="50" rows="20" wrap="hard"
-                id="inputUser"></textarea>
+                id="inputUser" autofocus></textarea>
         </main>
 
         <footer>
@@ -29,15 +29,15 @@
                 <span class="warningText"> Apenas letras minúsculas e sem acento.</span>
             </div>
             <div class="buttonsConteiner">
-                <a href="executionform.html" class="button active" autofocus>Criptografar</a>
-                <a href="executionform.html" class="button">Descriptografar</a>
+                <a class="button active" onclick=translateCript()>Criptografar</a>
+                <a class="button">Descriptografar</a>
 
             </div>
         </footer>
 
     </section>
 
-    <section class="rightConteinerPage">
+    <section class="rightConteinerPage" id="inputMode">
         <div class="cardConteiner">
             <span class="image">
                 <img src="/assets/High quality products 1 1.svg">
@@ -50,8 +50,21 @@
         </div>
     </section>
 
+    <section class="rightConteinerPage disable" id="outputMode">
+        <div class="cardConteiner afterCript">
+            <span>
+                <textarea class="textCript" cols="50" rows="18" wrap="hard" id="outputUser" readonly></textarea>
+            </span>
+
+            <div class="copyButton">
+                <a class="button copy">Copiar</a>
+            </div>
+        </div>
+    </section>
 
 
+
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
