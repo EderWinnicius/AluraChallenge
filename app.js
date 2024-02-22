@@ -4,23 +4,30 @@ let i = 0;
 function translateCript() {
 
     let userInput = document.getElementById("inputUser").value;
-    let userOutput = document.getElementById("outputUser").value;
+    let userOutput = document.getElementById("outputUser");
     let cardIn = document.getElementById("inputMode").classList;
     let cardOut = document.getElementById("outputMode").classList;
 
 
+    for (let i = 0; i < userInput.length; i++) {
+        let caractere = userInput.charAt(i);
+        if (caractere === caractere.toUpperCase()) {
+            console.log("INPUT COM LETRA MAIÚSCULA OU VAZIO");
+        } else {
+            if (i == 0) {
 
-    console.log(userInput);
+                userOutput.value = userInput;
 
+                cardIn.toggle("disable");
+                cardOut.toggle("disable");
 
-    if (userInput == "") {
-        console.log("Input Vazio");
-    } else if (i == 0) {
-        cardIn.toggle("disable");
-        cardOut.toggle("disable");
-        document.getElementById("outputUser").value = document.getElementById("inputUser").value;
-        i++;
-    } else {
-        document.getElementById("outputUser").value = document.getElementById("inputUser").value;
+                i++;
+            } else {
+                userOutput.value = userInput;
+            }
+        }
     }
+
+
 }
+
