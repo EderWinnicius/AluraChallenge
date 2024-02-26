@@ -210,6 +210,25 @@ body {
     display: none;
 }
 
+/*ANIMATIONS*/
+
+.activeWarning {
+    animation: shineRed .5s alternate;
+}
+
+@keyframes shineRed {
+    from {
+        color: red;
+        text-shadow: 1px 1px 20px red;
+        font-size: 1.9rem;
+    }
+
+    to {
+        color: #495057;
+        font-size: 1.5rem
+    }
+}
+
 @media screen and (max-width: 1300px) {
 
     body {

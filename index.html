@@ -26,11 +26,11 @@
         <footer>
             <div class="atentionWarning">
                 <img src="/assets/Group.png" alt="atentionWartingVetor">
-                <span class="warningText"> Apenas letras minúsculas e sem acento.</span>
+                <span class="warningText" id="warningMensage"> Apenas letras minúsculas e sem acento.</span>
             </div>
             <div class="buttonsConteiner">
                 <a class="button active" onclick=translateCript()>Criptografar</a>
-                <a class="button">Descriptografar</a>
+                <a class="button" onclick=translateDescript()>Descriptografar</a>
 
             </div>
         </footer>
@@ -57,7 +57,7 @@
             </span>
 
             <div class="copyButton">
-                <a class="button copy">Copiar</a>
+                <a class="button copy" onclick=translatecopy()>Copiar</a>
             </div>
         </div>
     </section>
